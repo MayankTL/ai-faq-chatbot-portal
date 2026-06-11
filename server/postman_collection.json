@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-4a5b-8c9d-0e1f2a3b4c5d",
+		"name": "AI FAQ Chatbot Portal",
+		"description": "API collection for the AI-Powered FAQ Chatbot Portal.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ask Question",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"question\": \"What is React?\"\n}"
+				},
+				"url": {
+					"raw": "localhost:5000/api/chat",
+					"host": [
+						"localhost:5000"
+					],
+					"path": [
+						"api",
+						"chat"
+					]
+				},
+				"description": "Send a question to the AI and receive an answer."
+			},
+			"response": []
+		},
+		{
+			"name": "Get Chat History",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/chat/history",
+					"host": [
+						"localhost:5000"
+					],
+					"path": [
+						"api",
+						"chat",
+						"history"
+					]
+				},
+				"description": "Retrieve all previous chat conversations."
+			},
+			"response": []
+		},
+		{
+			"name": "Clear History",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/chat/history",
+					"host": [
+						"localhost:5000"
+					],
+					"path": [
+						"api",
+						"chat",
+						"history"
+					]
+				},
+				"description": "Delete all chat records from the database."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
