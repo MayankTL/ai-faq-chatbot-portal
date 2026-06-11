@@ -2,6 +2,11 @@
 
 A full-stack AI-powered FAQ Chatbot Portal where users can ask questions and receive AI-generated responses using the Google Gemini API.
 
+## Live Links
+
+- **Frontend:** [https://ai-faq-chatbot-portal-1p74.vercel.app/](https://ai-faq-chatbot-portal-1p74.vercel.app/)
+- **Backend API:** [https://ai-faq-chatbot-portal.vercel.app/](https://ai-faq-chatbot-portal.vercel.app/)
+
 ## Features
 
 - **AI-Powered Responses:** Integrated with Google Gemini API (`gemini-2.5-flash`).
